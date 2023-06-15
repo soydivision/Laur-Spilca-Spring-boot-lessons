@@ -8,14 +8,14 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class ProjectConfiguration {
 
-    @Bean
+    @Bean(value = "A")
     public BeanExample beanExample() {
         BeanExample beanExample = new BeanExample();
         beanExample.setText("text from bean 1");
         return beanExample;
     }
 
-    @Bean
+    @Bean("B")
     public BeanExample beanExample2() {
         BeanExample beanExample = new BeanExample();
         beanExample.setText("text from bean 2");
