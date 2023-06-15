@@ -1,12 +1,9 @@
 package io.github.soydivision.config;
 
-import io.github.soydivision.beans.BeanExample;
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 
 @Configuration
+@ComponentScan(basePackages = "io.github.soydivision.beans")
 public class ProjectConfiguration {
-
-
 }

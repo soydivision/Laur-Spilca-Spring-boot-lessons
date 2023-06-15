@@ -1,5 +1,8 @@
 package io.github.soydivision.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BeanExample {
     private String text;
 
