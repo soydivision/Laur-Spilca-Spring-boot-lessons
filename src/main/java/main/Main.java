@@ -1,7 +1,7 @@
-package io.github.soydivision.main;
+package main;
 
-import io.github.soydivision.beans.BeanExample;
-import io.github.soydivision.config.ProjectConfiguration;
+import config.ProjectConfiguration;
+import beans.BeanExample;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
