@@ -1,16 +1,19 @@
 package main;
 
-import config.ProjectConfiguration;
+
+import bean.MyBean;
+import config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import services.ProductDeliveryService;
 
 public class Main {
     public static void main(String[] args) {
-        try (AnnotationConfigApplicationContext context =
-                     new AnnotationConfigApplicationContext(ProjectConfiguration.class)) {
-            ProductDeliveryService service =
-                    context.getBean(ProductDeliveryService.class);
-            service.addSomeProducts();
+        try (var context = new AnnotationConfigApplicationContext(ProjectConfig.class)) {
+            MyBean b1 = context.getBean(MyBean.class);
+            MyBean b2 = context.getBean(MyBean.class);
+            MyBean b3 = context.getBean(MyBean.class);
+            System.out.println(b1.getText());
+            System.out.println(b2);
+            System.out.println(b3);
         }
     }
 }
