@@ -1,8 +1,8 @@
-package bean;
+package beans;
 
+import org.springframework.stereotype.Component;
 
-import org.springframework.context.annotation.Bean;
-
+@Component
 public class MyBean {
 
     private String text;
