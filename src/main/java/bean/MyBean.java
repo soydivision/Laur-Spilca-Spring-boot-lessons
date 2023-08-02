@@ -1,7 +1,7 @@
 package bean;
 
 
-import javax.print.DocFlavor;
+import org.springframework.context.annotation.Bean;
 
 public class MyBean {
 
@@ -14,4 +14,8 @@ public class MyBean {
     public void setText(String text) {
         this.text = text;
     }
+
+
+
+
 }

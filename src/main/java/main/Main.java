@@ -12,8 +12,8 @@ public class Main {
             MyBean b2 = context.getBean(MyBean.class);
             MyBean b3 = context.getBean(MyBean.class);
             System.out.println(b1.getText());
-            System.out.println(b2);
-            System.out.println(b3);
+            System.out.println(b2.getText());
+            System.out.println(b3.getText());
         }
     }
 }
