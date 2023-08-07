@@ -17,7 +17,7 @@ public class ProjectConfig {
     @Bean
     public Owner owner() {
         Owner o = new Owner();
-        o.setCat(new Cat());
+        o.setCat(cat());
         return o;
     }
 }

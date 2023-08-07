@@ -14,6 +14,10 @@ public class Main {
 
             Cat cat = c.getBean(Cat.class);
             Owner owner = c.getBean(Owner.class);
+           
+
+
+
             System.out.println(cat);
             System.out.println(owner);
         }
