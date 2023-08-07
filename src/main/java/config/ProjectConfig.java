@@ -9,11 +9,15 @@ import org.springframework.context.annotation.Configuration;
 public class ProjectConfig {
     @Bean
     public Cat cat() {
-        return new Cat();
+        Cat c = new Cat();
+        c.setName("Tom");
+        return c;
     }
 
     @Bean
     public Owner owner() {
-        return new Owner();
+        Owner o = new Owner();
+        o.setCat(new Cat());
+        return o;
     }
 }
