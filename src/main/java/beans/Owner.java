@@ -5,17 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Owner {
-    private  Cat cat;
 
-//    public Owner(Cat cat) {
-//        this.cat = cat;
-//    }
+    @Autowired(required = false)
+    private Cat cat;
 
     public Cat getCat() {
         return cat;
     }
 
-    @Autowired
+
     public void setCat(Cat cat) {
         this.cat = cat;
     }
