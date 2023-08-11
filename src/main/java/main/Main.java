@@ -1,7 +1,6 @@
 package main;
 
 
-import beans.Cat;
 import beans.Owner;
 import config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
